@@ -1,0 +1,39 @@
+/**
+ * Basic stylesheet for the RHD Latest Pins plugin by Roundhouse Designs
+ **/
+ 
+ .rhd-latest-pins {
+	 width: 100%;
+	 list-style: none;
+	 padding: 0;
+	 clear: both;
+ }
+ 
+.rhd-latest-pins .rhd-pin {
+	 width: 48%;
+	 height: auto;
+	 display: inline-block;
+	 overflow: hidden;
+	 margin-bottom: 0.75em;
+	 position: relative;
+ }
+ 
+.rhd-latest-pins .rhd-pin:nth-of-type(odd) {
+	 float: left;
+ }
+ 
+.rhd-latest-pins .rhd-pin:nth-of-type(even) {
+	 float: right;
+ }
+ 
+.rhd-latest-pins .rhd-pin img {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
